@@ -1,4 +1,4 @@
-# Advent of Code
+# Christmas Challenge
 
 A collection of 50 performance-focused programming challenges.
 
@@ -18,9 +18,9 @@ The challenges focus on hardware optimization using SIMD instructions, cache opt
 
 1. **SIMD Vector Sum**
 ```cpp
-/* Compute sum of int32 vector using AVX2
+/* Compute sum of int32 vector using SIMD
 Input: vector<int> nums(1M)
-Compare: Normal vs SIMD vs unrolled SIMD */
+Compare: Normal vs SIMD vs unrolled */
 ```
 
 2. **Bit Population Counter**
@@ -48,7 +48,7 @@ Compare: if-else vs branchless */
 
 5. **SIMD Polynomial**
 ```cpp
-/* Evaluate polynomial using Horner + AVX2
+/* Evaluate polynomial using Horner
 Input: coeffs={1,2,3,4}, x=vector<float>(1024)
 Optimize: Register pressure, FMA instructions */
 ```
@@ -160,7 +160,7 @@ Use: crc32 instruction */
 
 20. **Vector Quantization**
 ```cpp
-/* K-means using AVX-512
+/* K-means using SIMD
 Input: 1M 3D points
 Optimize: Distance calculations */
 ```
@@ -204,7 +204,7 @@ Use: Memory fences, atomics */
 
 35. **SIMD Compression**
 ```cpp
-/* Bit-packing with AVX-512
+/* Bit-packing with SIMD
 Input: Mostly small integers
 Features: Delta encoding */
 ```
@@ -250,7 +250,7 @@ Features:
 /* SIMD KNN search engine
 Features:
 - Product quantization
-- AVX-512 distance calc
+- SIMD distance calc
 - LSH indexing */
 ```
 
